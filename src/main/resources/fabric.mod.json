@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ancient-fortunes",
+	"version": "${version}",
+	"name": "Ancient Fortunes",
+	"description": "Lets find fortunes and explore more about the past.",
+	"authors": [
+		"TwilightLynx793"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/ancient-fortunes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.twilightlynx.ancientfortunes.AncientFortunes"
+		],
+		"fabric-datagen": [
+			"net.twilightlynx.ancientfortunes.AncientFortunesDataGenerator"
+		],
+		"client": [
+			"net.twilightlynx.ancientfortunes.AncientFortunesClient"
+		]
+	},
+	"mixins": [
+		"ancient-fortunes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
